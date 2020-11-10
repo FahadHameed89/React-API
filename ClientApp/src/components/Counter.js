@@ -4,8 +4,12 @@ export class Counter extends Component {
   static displayName = Counter.name;
 
   constructor(props) {
-    super(props);
-    this.state = { currentCount: 0 };
+      super(props);
+      // Configure our initial state in the constructor
+      // When the state changes, it triggers a refresh
+      this.state = { currentCount: 0 };
+
+      // Bind the incrementCounter() method so that it can be used onclick.
     this.incrementCounter = this.incrementCounter.bind(this);
   }
 

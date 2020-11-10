@@ -21,9 +21,9 @@ export class FetchData extends Component {
             <th>Date</th>
             <th>Temp. (C)</th>
             <th>Temp. (F)</th>
-                    <th>Summary</th>
-                    <th>Precipitation In %</th>
-                    <th>Precipitation</th>
+            <th>Summary</th>
+            <th>Precipitation In %</th>
+            <th>Precipitation</th>
 
           </tr>
         </thead>
@@ -33,9 +33,9 @@ export class FetchData extends Component {
               <td>{forecast.date}</td>
               <td>{forecast.temperatureC}</td>
               <td>{forecast.temperatureF}</td>
-                  <td>{forecast.summary}</td>
-                  <td>{forecast.precipitation}</td>
-                  <td>{forecast.precipitationSummary}</td>
+                <td>{forecast.summary}</td>
+                <td>{forecast.precipitation}</td>
+                <td>{forecast.precipitationSummary}</td>
 
             </tr>
           )}
